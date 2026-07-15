@@ -53,12 +53,16 @@ export function Navbar() {
           <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 hover:text-white font-medium text-lg">Leadership</Link>
           <Link href="/terms" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 hover:text-white font-medium text-lg">Terms</Link>
           
+          {/* Minimalist Mobile Download Option */}
           <div className="pt-4 border-t border-white/10 mt-2">
-            <a href="/Qaave.apk" download onClick={() => setIsMobileMenuOpen(false)}>
-              <Button variant="primary" size="lg" className="w-full gap-2 font-semibold justify-center">
-                <Download size={18} />
-                <span>Download Qaave</span>
-              </Button>
+            <a 
+              href="/Qaave.apk" 
+              download 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center gap-3 text-zinc-400 hover:text-white font-medium text-lg transition-colors"
+            >
+              <Download size={20} />
+              <span>Download Qaave</span>
             </a>
           </div>
         </div>
