@@ -26,11 +26,14 @@ export function Navbar() {
 
         {/* Desktop CTA & Mobile Toggle Button */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:block">
+          
+          {/* New Minimalist Desktop Download Section */}
+          <div className="hidden md:flex items-center gap-4 border-l border-white/10 pl-6">
+            <span className="text-sm font-semibold text-zinc-300">Qaave</span>
             <a href="/Qaave.apk" download>
-              <Button variant="primary" size="sm" className="gap-2 font-semibold">
-                <Download size={16} />
-                <span>Get Qaave</span>
+              <Button variant="primary" size="sm" className="gap-2 font-semibold h-8 px-4 text-xs rounded-full">
+                <Download size={14} />
+                <span>Download</span>
               </Button>
             </a>
           </div>
